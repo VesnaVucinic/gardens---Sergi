@@ -1,0 +1,107 @@
+  body {
+    margin: 0;
+    background: rgb(238, 238, 238);
+    height: auto;
+  }
+  
+  h1 {
+    font-weight: 450;
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+  
+  h5 {
+    font-weight: 450;
+    padding-top: 20px;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+      -30px 0px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  #intro {
+    background: #fff;
+  }
+  
+  #intro-txt {
+    display: flex; /*automaticly desplayes in row - horisontaly*/
+    flex: 0 1 100vw;
+    height: 50vh;
+    justify-content: center; /*align horisontaly*/
+    align-items: center; /*align verticaly*/
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  #intro-img {
+    background: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/04/05/16/worlds-best-gardens-4.jpg?width=1368);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    size: cover;
+    height: 50vh;
+    flex: 0 1 100vw;
+    margin: 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: 1px rgb(177, 176, 176) solid;
+    /* display: inline-block; */
+    margin: 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.7s ease;
+  }
+  
+  .btn:hover {
+    background: #eeeded;
+    border: 1px rgb(177, 176, 176) solid;
+  }
+  
+  #header {
+    padding: 25px;
+    text-align: center;
+    background:rgb(32, 32, 32);
+    color: #fff;
+  }
+  
+  
+  .caption {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    color: #333;
+  }
+  
+  /* Screen Sizes 500px and Up */
+  @media only screen and (min-width: 600px) {
+        #intro {
+        display: flex;
+        height: 100%;
+        }
+    
+        #intro-txt {
+        flex: 0 1 40vw;/*flex growth flex shrink and 0 and 1 are dafault. It sizes the item based on its width / height properties. */
+        height: 100vh; 
+        }
+    
+        #intro-img {
+        height: 100vh;
+        flex: 0 1 60vw;
+        }
+    }
